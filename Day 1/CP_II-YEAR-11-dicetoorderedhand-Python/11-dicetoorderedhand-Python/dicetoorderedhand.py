@@ -8,8 +8,19 @@
 # assert(dicetoorderedhand(1,4,2) == 421)
 # assert(dicetoorderedhand(6,5,6) == 665)
 # assert(dicetoorderedhand(2,2,2) == 222)
-
-
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	pass
+	if a == max(a,b,c):
+		x= max(b,c)
+	elif b== max(a,b,c):
+		x=max(a,c)
+	else:
+		x=max(a,b)
+	return max(a,b,c)*100+x*10+min(a,b,c)
+
+
+
+
+
+
+
